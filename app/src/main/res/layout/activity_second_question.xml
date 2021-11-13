@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF00"
+    tools:context=".SecondQuestion">
+
+    <TextView
+        android:id="@+id/txtV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fill the detail"
+        android:textSize="30dp"
+        android:textColor="#FF0000"
+        android:layout_centerHorizontal="true"></TextView>
+
+    <RelativeLayout
+        android:id="@+id/relLt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtV1"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/txtV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:text="Name:"
+            android:textSize="20dp"
+            android:textColor="#FF0000"></TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:textColorHint="#FF0000"
+            android:layout_toRightOf="@id/txtV2"
+            android:layout_alignBaseline="@id/txtV2"
+            android:layout_marginLeft="2dp"
+            android:inputType="textPersonName"></EditText>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relLt"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/txtV3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Email:"
+            android:textSize="20dp"
+            android:textColor="#FF0000"
+            android:inputType="textEmailAddress"></TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Email"
+            android:textColorHint="#FF0000"
+            android:layout_toRightOf="@id/txtV3"
+            android:layout_alignBaseline="@id/txtV3"
+            android:layout_marginLeft="2dp"></EditText>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relLt2"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/txtV4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Department:"
+            android:textColor="#FF0000"
+            android:textSize="20dp"
+            android:layout_marginLeft="50dp"></TextView>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/txtV4">
+
+            <RadioButton
+                android:id="@+id/rdBtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:text="CSE"
+                android:textSize="20dp"
+                android:textColor="#FF0000"></RadioButton>
+            <RadioButton
+                android:id="@+id/rdBtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ECE"
+                android:textSize="20dp"
+                android:textColor="#FF0000"></RadioButton>
+            <RadioButton
+                android:id="@+id/rdBtn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ME"
+                android:textSize="20dp"
+                android:textColor="#FF0000"></RadioButton>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relLt3"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/txtV5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select the subject:"
+            android:textColor="#FF0000"
+            android:layout_marginLeft="50dp"
+            android:textSize="20dp"></TextView>
+
+        <CheckBox
+            android:id="@+id/chBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtV5"
+            android:layout_marginLeft="100dp"
+            android:text="Android"
+            android:textSize="20dp"
+            android:textColor="#FF0000"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/chBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chBox1"
+            android:layout_marginLeft="100dp"
+            android:text="Machine Learning"
+            android:textSize="20dp"
+            android:textColor="#FF0000"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/chBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chBox2"
+            android:layout_marginLeft="100dp"
+            android:text="Data Science"
+            android:textSize="20dp"
+            android:textColor="#FF0000"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/chBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chBox3"
+            android:layout_marginLeft="100dp"
+            android:text="Engineering Mathematics"
+            android:textSize="20dp"
+            android:textColor="#FF0000"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/chBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chBox4"
+            android:layout_marginLeft="100dp"
+            android:text="Engineering Physics"
+
+            android:textSize="20dp"
+            android:textColor="#FF0000"></CheckBox>
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/subBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#FF0000"
+        android:layout_below="@id/relLt4"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"></Button>
+
+
+</RelativeLayout>
